@@ -12,7 +12,8 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
         android:ems="10"
-        android:inputType="textPersonName"
+        android:textAlignment="center"
+        android:inputType="number"
         android:hint="Numero de Empleado"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -24,6 +25,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
         android:ems="10"
+        android:textAlignment="center"
         android:inputType="textPersonName"
         android:hint="Nombre"
         app:layout_constraintEnd_toEndOf="parent"
@@ -37,6 +39,7 @@
         android:layout_marginTop="8dp"
         android:ems="10"
         android:hint="Apellidos"
+        android:textAlignment="center"
         android:inputType="textPersonName"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -48,6 +51,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
         android:ems="10"
+        android:textAlignment="center"
         android:inputType="textPersonName"
         android:hint="Direccion"
         app:layout_constraintEnd_toEndOf="parent"
@@ -60,6 +64,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
         android:ems="10"
+        android:textAlignment="center"
         android:hint="Numero de Teléfono"
         android:inputType="phone"
         app:layout_constraintEnd_toEndOf="parent"
@@ -71,6 +76,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:ems="10"
+        android:textAlignment="center"
         android:inputType="number"
         android:hint="Edad"
         app:layout_constraintEnd_toEndOf="parent"
@@ -83,6 +89,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
         android:ems="10"
+        android:textAlignment="center"
         android:hint="Antigüedad"
         android:inputType="numberDecimal"
         app:layout_constraintEnd_toEndOf="parent"
@@ -95,6 +102,7 @@
         android:layout_height="wrap_content"
         android:ems="10"
         android:hint="Salario"
+        android:textAlignment="center"
         android:inputType="numberDecimal"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -102,21 +110,22 @@
 
     <Button
         android:id="@+id/btnAgregar"
-        android:layout_width="wrap_content"
+        android:layout_width="125dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginBottom="16dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="16dp"
         android:text="AGREGAR"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtSalario" />
 
     <Button
         android:id="@+id/btnConsultar"
-        android:layout_width="wrap_content"
+        android:layout_width="125dp"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="16dp"
-        android:layout_marginBottom="16dp"
+        android:layout_marginEnd="24dp"
         android:text="CONSULTAR"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toBottomOf="@+id/btnAgregar"
         app:layout_constraintEnd_toEndOf="parent" />
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>
